@@ -29,18 +29,10 @@ module.exports = function(grunt) {
       },
       'gh-pages': {
         options: {
-          base: './public'
+          base: 'public'
         },
         // These files will get pushed to the `gh-pages` branch (the default).
-        src: ['index.html']
-      },
-      'foo': {
-        options: {
-          base: 'bar-build',
-          branch: 'bar'
-        },
-        // These files will get pushed to the `bar` branch.
-        src: ['other.txt']
+        src: ['**']
       }
     }
   });
