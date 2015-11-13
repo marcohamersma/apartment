@@ -1,0 +1,106 @@
+// This is where you can add your site-specific styles
+
+
+/* Typography */
+@font-face {
+  font-family: ATCOverlook;
+  src:
+    url(/fonts/ATCOverlook-Regular.woff2) format('woff2'),
+    url(/fonts/ATCOverlook-Regular.woff) format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ATCOverlook;
+  src: url(/fonts/ATCOverlook-Bold.woff2) format('woff2'),
+       url(/fonts/ATCOverlook-Bold.woff) format('woff');
+  font-weight: bold;
+}
+
+
+body {
+  line-height: 1.5;
+  max-width: 100%;
+  font-family: ATCOverlook, Futura, sans-serif;
+}
+
+h2, h3 {
+  margin-bottom: .3em;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// TIP: If you want to use some of the font sizes or colors you've defined
+// in the configuration, you can use helpers like color() and font-size().
+// For example:
+
+::-moz-selection {
+  background: rgba(color('red'), 0.4);
+  text-shadow: none;
+}
+
+::selection {
+  background: rgba(color('red'), 0.4);
+  text-shadow: none;
+}
+
+header {
+  width: 100%;
+  color: white;
+}
+
+.container, .wrapper {
+  max-width: 1280px;
+  padding: 0 20px;
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: $breakpoint-column) {
+  .small-block {
+    max-width: 480px;
+    width: 75%;
+    min-width: 290px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .column, .gutter {
+    flex: 1,
+  }
+
+  .gutter {
+    max-width: 80px;
+    flex: 5% 0;
+  }
+
+  @include type-rules(1, $headerTextScale: 1.4);
+}
+
+// How to define breakpoints:
+// Set multipliers for body
+@media screen and (min-width: $breakpoint-tablet) {
+  // $bodyTextScale: 1.125;
+  // $headerTextScale: 1.8;
+  // $spacingScale: 2;
+  // $borderScale: 2;
+
+  // @include scaled-spacing-and-type($spacingScale, $bodyTextScale, $headerTextScale);
+}
+
+@media screen and (min-width: $breakpoint-widescreen) {
+
+}

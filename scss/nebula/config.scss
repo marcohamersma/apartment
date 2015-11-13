@@ -1,0 +1,43 @@
+// Please edit this file :)
+
+$class-prefix: 'g';
+$use-reset: true;
+
+$colors: (
+  'red'       : #F25330,
+  'blue'      : #4CBFD9,
+  'grey'      : #F2F2F2,
+  'black'     : #252525,
+  'white'     : #FFFFFF,
+);
+
+$font-base-sizes: (
+  'normal'  : 14,
+  'large'  : 18,
+  'larger'  : 23,
+  'largest'  : 40,
+  'smallest': 12.5,
+  'small'   : 15,
+);
+
+$header-base-sizes: (
+  'h1': 26,
+  'h2': 21.5,
+);
+
+$spacing-values: (
+  'smallest': 5,
+  'small'   : 20,
+  'medium'  : 30,
+  'large'   : 40,
+);
+$font-feature-settings: ('kern', 'onum', 'liga');
+$font-feature-heading-settings: ('calt', 'dlig', 'clig');
+$borders-for-color: ('accent', 'mid', black, white);
+$border-properties: ('border', 'border-bottom');
+$spacing-directions: ('top', 'bottom');
+$breakpoint-mobile: 400px;
+$breakpoint-column: 650px;
+$breakpoint-tablet: 650px;
+$breakpoint-widescreen: 1200px;
+$breakpoint-hide-on-mobile: 400px;
