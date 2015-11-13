@@ -61,22 +61,6 @@ textarea { resize: vertical; }
 
 img { max-width: 100%; }
 
-.g-border-accent { border: 1px solid; }
-
-.g-border-bottom-accent { border-bottom: 1px solid; }
-
-.g-border-mid { border: 1px solid; }
-
-.g-border-bottom-mid { border-bottom: 1px solid; }
-
-.g-border-black { border: 1px solid #252525; }
-
-.g-border-bottom-black { border-bottom: 1px solid #252525; }
-
-.g-border-white { border: 1px solid #FFFFFF; }
-
-.g-border-bottom-white { border-bottom: 1px solid #FFFFFF; }
-
 /* Spacing */
 .g-spacing-smallest { margin: 5px; }
 

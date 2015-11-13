@@ -33,8 +33,8 @@ $spacing-values: (
 );
 $font-feature-settings: ('kern', 'onum', 'liga');
 $font-feature-heading-settings: ('calt', 'dlig', 'clig');
-$borders-for-color: ('accent', 'mid', black, white);
-$border-properties: ('border', 'border-bottom');
+$borders-for-color: ();
+$border-properties: ();
 $spacing-directions: ('top', 'bottom');
 $breakpoint-mobile: 400px;
 $breakpoint-column: 650px;
