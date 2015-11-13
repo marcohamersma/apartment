@@ -90,17 +90,14 @@ header {
   @include type-rules(1, $headerTextScale: 1.4);
 }
 
-// How to define breakpoints:
-// Set multipliers for body
-@media screen and (min-width: $breakpoint-tablet) {
-  // $bodyTextScale: 1.125;
-  // $headerTextScale: 1.8;
-  // $spacingScale: 2;
-  // $borderScale: 2;
+@media screen and (min-width: 1000px) {
+  .stuff-list {
+    column-count: 2;
+    column-gap: space('medium');
+  }
 
-  // @include scaled-spacing-and-type($spacingScale, $bodyTextScale, $headerTextScale);
+  .stuff-list>div {
+    display: inline-block;
+  }
 }
 
-@media screen and (min-width: $breakpoint-widescreen) {
-
-}

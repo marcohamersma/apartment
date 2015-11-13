@@ -314,3 +314,6 @@ header { width: 100%; color: white; }
   .g-font-small { font-size: 15px; }
   h1, .g-font-h1 { font-size: 36.4px; }
   h2, .g-font-h2 { font-size: 30.1px; } }
+
+@media screen and (min-width: 1000px) { .stuff-list { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-gap: 30px; -moz-column-gap: 30px; column-gap: 30px; }
+  .stuff-list > div { display: inline-block; } }
