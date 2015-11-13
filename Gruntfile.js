@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     watch: {
       styles: {
         files:   ['scss/**/*.scss'], // which files to watch
-        tasks:   ['custom', 'autoprefixer'],
+        tasks:   ['custom', 'autoprefixer', 'cssmin'],
         options: {
           nospawn: true
         }
@@ -34,13 +34,21 @@ module.exports = function(grunt) {
         // These files will get pushed to the `gh-pages` branch (the default).
         src: ['**']
       }
+    },
+    cssmin: {
+      target: {
+        files: {
+          './public/styles.css': './public/styles.css'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
-  grunt.registerTask('default', ['custom', 'autoprefixer', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default', ['custom', 'autoprefixer', 'cssmin', 'watch']);
 
   // grunt.registerTask('buildVanilla', function() {
   //   var modules = baseConfig.defaultModules;
