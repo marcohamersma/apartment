@@ -47,12 +47,12 @@ img {
 // For example:
 
 ::-moz-selection {
-  background: rgba(color('red'), 0.4);
+  background: rgba(color('blue'), 0.4);
   text-shadow: none;
 }
 
 ::selection {
-  background: rgba(color('red'), 0.4);
+  background: rgba(color('blue'), 0.4);
   text-shadow: none;
 }
 
