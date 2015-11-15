@@ -86,11 +86,11 @@ header {
     max-width: 80px;
     flex: 5% 0;
   }
-
-  @include type-rules(1, $headerTextScale: 1.4);
 }
 
 @media screen and (min-width: 1000px) {
+  @include type-rules(1.1, $headerTextScale: 1.4);
+
   .stuff-list {
     column-count: 2;
     column-gap: space('medium');
