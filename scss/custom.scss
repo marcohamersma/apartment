@@ -64,7 +64,14 @@ header {
 .container, .wrapper {
   max-width: 1280px;
   padding: 0 20px;
-  padding: 0 5vw;
+  padding: 0 3vw;
+}
+
+.e { // euro symbol
+  font-size: .8em;
+  margin: 0 1px;
+  top: 1px;
+  position: relative;
 }
 
 @media screen and (min-width: $breakpoint-column) {
@@ -84,7 +91,7 @@ header {
 
   .gutter {
     max-width: 80px;
-    flex: 5% 0;
+    flex: 3% 0;
   }
 }
 
@@ -94,6 +101,11 @@ header {
   .stuff-list {
     column-count: 2;
     column-gap: space('medium');
+    @include font-feature-settings(append($font-feature-settings, smcp));
+  }
+
+  .gutter {
+    flex: 5% 0;
   }
 
   .stuff-list>div {
