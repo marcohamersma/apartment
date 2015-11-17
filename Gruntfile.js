@@ -36,9 +36,12 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
+      options: {
+        sourceMap: true
+      },
       target: {
         files: {
-          './public/styles.css': './public/styles.min.css'
+          './public/styles.min.css': './public/styles.css'
         }
       }
     }
