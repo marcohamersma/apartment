@@ -19,7 +19,7 @@ module.exports = function(grunt) {
          browsers: ['last 2 versions']
       },
       single_file: {
-        src: './nebula-custom.css',
+        src: './public/styles.css',
         dest: './public/styles.css'
       },
     },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          './public/styles.css': './public/styles.css'
+          './public/styles.css': './public/styles.min.css'
         }
       }
     }
@@ -49,6 +49,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.registerTask('default', ['custom', 'autoprefixer', 'cssmin', 'watch']);
+  grunt.registerTask('build', ['custom', 'autoprefixer', 'cssmin']);
 
   // grunt.registerTask('buildVanilla', function() {
   //   var modules = baseConfig.defaultModules;
@@ -58,7 +59,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('custom', function() {
     var done = this.async();
-    builder(null, './nebula-custom.css', null, done);
+    builder(null, './public/styles.css', null, done);
   });
 
   // grunt.registerTask('buildConfig', function() {
